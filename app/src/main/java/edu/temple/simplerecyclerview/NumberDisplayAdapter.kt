@@ -17,7 +17,8 @@ class NumberDisplayAdapter (_numberArray: Array<Int>): RecyclerView.Adapter<Numb
             TextView(
                 parent.context
             ).apply {
-                layoutParams = ViewGroup.LayoutParams(300, 300)
+                setPadding(10,10,10,10)
+                textSize=30f
             }
         )
     }
