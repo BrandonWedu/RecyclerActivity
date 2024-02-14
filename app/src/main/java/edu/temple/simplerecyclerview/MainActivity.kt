@@ -5,12 +5,15 @@ import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
+
+    //initialize recycler view
+    lateinit var recyclerView: RecyclerView;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         // Step 1: Reference RecyclerView object
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
         //Step 2: Provide a LayoutManager
 
